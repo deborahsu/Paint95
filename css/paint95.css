@@ -1,6 +1,7 @@
 .body {
     margin: 0px;
     font-size: 0px;
+    position:absolute;
 }
 
 .container {
@@ -24,6 +25,7 @@
 }
 
 #canvas {
+    position:relative;
     background-color: white;
     cursor: pointer;
     height: 500px;

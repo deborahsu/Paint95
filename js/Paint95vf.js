@@ -8,8 +8,8 @@ function draw(e) {
     var dot = document.createElement("div");
     dot.style.position = 'absolute';
     dot.style.backgroundColor = color;
-    dot.style.left = e.clientX + 'px';
-    dot.style.top = e.clientY + 'px';
+    dot.style.left = e.clientX - e.target.offsetLeft + 'px';
+    dot.style.top = e.clientY - e.target.offsetTop + 'px';
     dot.style.width = brushSizeX;
     dot.style.height = brushSizeY;
     dot.style.borderRadius = borderRadius;
